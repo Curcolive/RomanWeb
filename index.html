@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEVIN ROMAN — Art Toy Coleccionable &amp; Perfume 50 ml | Edición Especial Boca Juniors</title>
+  <meta name="description" content="Art Toy artesanal de Kevin Roman en porcelana fría con frasco de perfume masculino de 50 ml integrado. Edición limitada de 100 piezas numeradas a mano inspirada en Boca Juniors.">
+
+  <!-- Fonts: Oswald & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Fixed Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-topbar">
+      <div class="header-topbar-bg" aria-hidden="true"></div>
+      <div class="container-shell header-topbar-inner">
+        <div class="topbar-left">
+          <span class="badge-micro text-gold" data-i18n="topbar_edition">Edición Monumental</span>
+          <span class="spec-micro text-subtext topbar-archive-label" data-i18n="topbar_archive">· Archivo Oficial Art Toy &amp; Perfumería</span>
+        </div>
+        <div class="topbar-right">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span class="badge-micro text-archival" data-i18n="topbar_access">Acceso privado disponible</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-shell header-main">
+      <a class="brand-link" href="#galeria" aria-label="Kevin Roman Atelier Inicio">
+        <img class="brand-logo" src="./assets/brand/logo-kevin-roman-blanco.png" alt="Kevin Roman Logo">
+        <span class="brand-atelier-tag badge-micro">Atelier</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link is-active" href="#galeria" data-i18n="nav_collection">Galería</a>
+        <a class="nav-link" href="#terminal-compra" data-i18n="nav_product">Art Toy Kevin Roman</a>
+        <a class="nav-link" href="#historia" data-i18n="nav_history">Historia</a>
+        <a class="nav-link" href="#especificaciones" data-i18n="nav_specs">Especificaciones</a>
+        <a class="nav-link" href="#testimonios" data-i18n="nav_testimonials">Coleccionistas</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="open-search-btn" type="button" aria-label="Buscar en el archivo">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+
+        <div class="segmented-switch" role="group" aria-label="Selector de idioma">
+          <button class="switch-btn is-active" type="button" data-lang-btn="es">ES</button>
+          <span class="switch-divider">/</span>
+          <button class="switch-btn" type="button" data-lang-btn="en">EN</button>
+        </div>
+
+        <div class="segmented-switch" role="group" aria-label="Selector de moneda">
+          <button class="switch-btn is-active" type="button" data-currency-btn="USD">USD</button>
+          <span class="switch-divider">/</span>
+          <button class="switch-btn" type="button" data-currency-btn="ARS">ARS</button>
+        </div>
+
+        <button class="icon-btn" id="open-bag-btn" type="button" aria-label="Bolsa de reserva">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="bag-count" id="bag-count">0</span>
+        </button>
+
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-open" type="button" aria-label="Abrir menú">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+    <div class="mobile-drawer-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <img class="brand-logo" src="./assets/brand/logo-kevin-roman-blanco.png" alt="Kevin Roman">
+        <button class="modal-close" id="mobile-menu-close" type="button" aria-label="Cerrar menú" style="position:static;">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-drawer-nav">
+        <a class="mobile-drawer-link" href="#galeria" data-i18n="nav_collection">Galería</a>
+        <a class="mobile-drawer-link" href="#terminal-compra" data-i18n="nav_product">Art Toy Kevin Roman</a>
+        <a class="mobile-drawer-link" href="#historia" data-i18n="nav_history">Historia</a>
+        <a class="mobile-drawer-link" href="#especificaciones" data-i18n="nav_specs">Especificaciones</a>
+        <a class="mobile-drawer-link" href="#testimonios" data-i18n="nav_testimonials">Coleccionistas</a>
+      </nav>
+      <div style="display:flex;gap:0.75rem;margin-top:auto;">
+        <div class="segmented-switch" style="display:inline-flex;">
+          <button class="switch-btn is-active" type="button" data-lang-btn="es">ES</button>
+          <span class="switch-divider">/</span>
+          <button class="switch-btn" type="button" data-lang-btn="en">EN</button>
+        </div>
+        <div class="segmented-switch" style="display:inline-flex;">
+          <button class="switch-btn is-active" type="button" data-currency-btn="USD">USD</button>
+          <span class="switch-divider">/</span>
+          <button class="switch-btn" type="button" data-currency-btn="ARS">ARS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-stage">
+    <!-- Top Fan Tribal Ribbon Banner -->
+    <section class="fan-ribbon-section" aria-label="Banner Hinchada Boca Juniors">
+      <div class="fan-ribbon-visual">
+        <div class="fan-ribbon-track" aria-hidden="true"></div>
+        <div class="fan-ribbon-vignette" aria-hidden="true"></div>
+      </div>
+
+      <div class="fan-ticker-bar">
+        <div class="container-shell fan-ticker-inner">
+          <div class="fan-ticker-left">
+            <span class="badge-micro text-gold" style="display:inline-flex;align-items:center;gap:0.5rem;">
+              <span class="ping-dot" aria-hidden="true"></span>
+              <span data-i18n="banner_series">Serie de Colección</span>
+            </span>
+            <span class="spec-micro text-subtext" data-i18n="banner_tribute">· Homenaje escultórico a la identidad xeneize</span>
+          </div>
+          <span class="badge-micro text-archival run-pill" data-i18n="banner_run">Tirada Mundial · 100 piezas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="container-shell breadcrumbs-bar">
+      <nav class="breadcrumbs spec-micro" aria-label="Ruta de navegación">
+        <a href="#galeria" data-i18n="breadcrumb_atelier">Atelier Kevin Roman</a>
+        <span>/</span>
+        <a href="#historia" data-i18n="breadcrumb_collection">Colección Monumental</a>
+        <span>/</span>
+        <a href="#especificaciones" data-i18n="breadcrumb_sculptures">Art Toy &amp; Perfumería</a>
+        <span>/</span>
+        <span class="text-archival" data-i18n="breadcrumb_current">Kevin Roman — Art Toy &amp; Perfume 50 ml</span>
+      </nav>
+    </div>
+
+    <!-- Main 12-Column Product Showcase -->
+    <section class="container-shell showcase-section" id="galeria">
+      <div class="showcase-grid">
+        <!-- LEFT COLUMN (7 Cols): Interactive Gallery Plinth -->
+        <div class="gallery-column">
+          <div class="plinth-stage" id="plinth-stage">
+            <div class="plinth-spotlight" aria-hidden="true"></div>
+            <div class="plinth-gold-halo" aria-hidden="true"></div>
+
+            <div class="plinth-badges-left">
+              <span class="chamfer-badge badge-micro">
+                <span class="badge-dot" aria-hidden="true"></span>
+                <span data-i18n="badge_limited">Edición Limitada · 100 piezas</span>
+              </span>
+            </div>
+
+            <div class="plinth-badges-right">
+              <span class="counter-pill spec-micro" id="gallery-counter">1 / 20</span>
+            </div>
+
+            <div class="plinth-image-wrap" id="plinth-image-wrap">
+              <img class="plinth-main-img" id="main-sculpture-img" src="./assets/gallery/roman-01.jpg" alt="Art Toy Kevin Roman perfume 50 ml y caja temática en estadio La Bombonera">
+            </div>
+
+            <button class="plinth-arrow plinth-arrow-prev" id="gallery-prev" type="button" aria-label="Fotografía anterior">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="plinth-arrow plinth-arrow-next" id="gallery-next" type="button" aria-label="Fotografía siguiente">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+
+            <div class="plinth-toolbar">
+              <div class="plinth-toolbar-group">
+                <button class="toolbar-btn spec-micro" id="btn-studio-light" type="button" title="Iluminación de estudio">
+                  <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                  <span data-i18n="btn_spotlight">Luz Estudio</span>
+                </button>
+                <button class="toolbar-btn spec-micro" id="btn-3d-inspect" type="button" title="Inspección de ángulo 3D">
+                  <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/></svg>
+                  <span data-i18n="btn_tilt">Inspección 3D</span>
+                </button>
+                <span class="toolbar-divider" aria-hidden="true"></span>
+                <button class="toolbar-btn spec-micro" id="btn-zoom-macro" type="button" title="Ampliar fotografía">
+                  <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  <span class="toolbar-btn-label-hide-sm" data-i18n="btn_zoom">Ampliar Vista</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Slide Caption -->
+          <div class="gallery-caption-strip">
+            <div class="gallery-caption-main">
+              <span class="gallery-slide-title" id="gallery-badge-title">01. Art Toy Kevin Roman &amp; Packaging La Bombonera</span>
+              <span class="gallery-slide-desc" id="gallery-caption-text">Presentación oficial del Art Toy Perfume KEVIN 50 ml junto a su packaging temático xeneize.</span>
+            </div>
+            <span class="gallery-caption-meta badge-micro text-gold" data-i18n="badge_material">Porcelana Fría · Perfume 50 ml</span>
+          </div>
+
+          <!-- Dynamic Thumbnail Rail -->
+          <div class="thumbs-grid" id="gallery-thumbs"></div>
+
+          <!-- Atelier Guarantee Strip -->
+          <div class="guarantee-card">
+            <div class="guarantee-left">
+              <div class="guarantee-icon">
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <p class="guarantee-title" data-i18n="guarantee_title">Garantía de Autor Atelier Kevin Roman</p>
+                <p class="guarantee-desc" data-i18n="guarantee_desc">Pieza en porcelana fría modelada artesanalmente con frasco de vidrio integrado. Cada ejemplar inspeccionado, retocado y numerado a mano por el autor.</p>
+              </div>
+            </div>
+            <span class="guarantee-pill badge-micro text-gold" data-i18n="guarantee_tag">100% Artesanal</span>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (5 Cols): Purchase & Collector Specs Terminal -->
+        <aside class="terminal-column" id="terminal-compra">
+          <div>
+            <div class="product-eyebrows">
+              <span class="eyebrow-dot-label spec-micro">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span data-i18n="eyebrow_edition">Edición Limitada Art Toy</span>
+              </span>
+              <span class="format-tag badge-micro" data-i18n="eyebrow_format">Figura + Perfume 50 ml</span>
+            </div>
+
+            <h1 class="hero-title font-display">KEVIN ROMAN</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Art Toy &amp; Perfumería Coleccionable — Edición Especial Boca Juniors</p>
+            <p class="hero-desc" data-i18n="hero_desc">Reinterpretación contemporánea de una leyenda del fútbol argentino convertida en Art Toy de colección y contenedor de perfume masculino (50 ml). Fusión de pasión xeneize, diseño de autor y perfumería temática.</p>
+          </div>
+
+          <!-- Serial Allocation Block -->
+          <div class="plinth-box" id="serial-block">
+            <div class="serial-header">
+              <span class="spec-micro text-subtext" data-i18n="serial_label">Asignación de Matrícula</span>
+              <span class="badge-micro text-gold" data-i18n="serial_order">Asignación por orden</span>
+            </div>
+
+            <div class="serial-numbers">
+              <div>
+                <span class="serial-main">Nº 047</span>
+                <span class="serial-total">/ 100</span>
+              </div>
+              <span class="stock-badge badge-micro">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span data-i18n="serial_stock">12 unidades disponibles</span>
+              </span>
+            </div>
+
+            <div class="progress-track">
+              <div class="progress-fill" id="serial-progress-fill"></div>
+            </div>
+
+            <div class="serial-footer">
+              <span data-i18n="serial_reserved_count">88 coleccionistas ya reservaron su copia</span>
+              <span class="text-gold" data-i18n="serial_irrepetible">Tirada irrepetible</span>
+            </div>
+          </div>
+
+          <!-- Realistic Pricing Card -->
+          <div class="plinth-box-raised">
+            <div class="price-row">
+              <div>
+                <span class="spec-micro text-subtext" style="display:block;margin-bottom:0.2rem;" data-i18n="price_label">Precio de Adquisición Oficial</span>
+                <div class="price-main">
+                  <span id="price-amount">$180</span>
+                  <span class="price-currency" id="price-code">USD</span>
+                </div>
+              </div>
+              <div style="text-align:right;">
+                <span class="price-plan-tag badge-micro text-gold" data-i18n="price_plan">Plan de Atelier</span>
+                <p class="price-installment" id="price-installments">3 cuotas sin interés de $60.00 USD</p>
+              </div>
+            </div>
+
+            <div class="price-includes spec-micro">
+              <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+              <span data-i18n="price_includes">Art Toy Coleccionable + Fragancia Masculina 50 ml + Packaging de Exhibición</span>
+            </div>
+          </div>
+
+          <!-- Action CTAs -->
+          <div class="cta-stack">
+            <button class="btn-primary-gold" id="reserve-btn" type="button">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+              <span id="reserve-btn-text" data-i18n="cta_reserve">Reservar Art Toy (047/100)</span>
+            </button>
+            <button class="btn-secondary-navy" id="open-curator-btn" type="button">
+              <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+              <span data-i18n="cta_curator">Solicitar Asesoría de Curador Privado</span>
+            </button>
+          </div>
+
+          <!-- Collector Privileges -->
+          <div class="plinth-box">
+            <span class="badge-micro text-gold" data-i18n="included_title">Contenido incluido en la edición</span>
+            <div class="included-grid">
+              <div class="included-item">
+                <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 1 4 4v2H8V6a4 4 0 0 1 4-4Z"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M9 14h6"/></svg>
+                <span><strong data-i18n="inc_1_title">1 Art Toy Coleccionable</strong> — <span class="text-subtext" data-i18n="inc_1_desc">KEVIN Roman en porcelana fría modelada artesanalmente.</span></span>
+              </div>
+              <div class="included-item">
+                <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v4l3 3v11H6V10l3-3V3z"/><path d="M9 3h6"/></svg>
+                <span><strong data-i18n="inc_2_title">Frasco de Vidrio Integrado</strong> — <span class="text-subtext" data-i18n="inc_2_desc">Contenedor de perfume masculino de 50 ml.</span></span>
+              </div>
+              <div class="included-item">
+                <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+                <span><strong data-i18n="inc_3_title">Packaging Temático</strong> — <span class="text-subtext" data-i18n="inc_3_desc">Diseñado exclusivamente para exhibición y conservación.</span></span>
+              </div>
+              <div class="included-item">
+                <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span><strong data-i18n="inc_4_title">Certificado &amp; Sistema Gráfico</strong> — <span class="text-subtext" data-i18n="inc_4_desc">Inspirado en la mística e identidad xeneize de Boca Juniors.</span></span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Diagonal Stadium Marquee Divider (DESIGN.md Component #6) -->
+    <div class="diagonal-marquee-wrap" aria-hidden="true">
+      <div class="diagonal-marquee-band">
+        <div class="diagonal-marquee-track">
+          <span class="marquee-item">KEVIN ROMAN ATELIER <span class="marquee-serial">· Serie 001–100</span></span>
+          <span class="marquee-item">PORCELANA FRÍA ARTESANAL <span class="marquee-serial">· Frasco 50 ml</span></span>
+          <span class="marquee-item">MÍSTICA XENEIZE DE COLECCIÓN <span class="marquee-serial">· Edición Boca Juniors</span></span>
+          <span class="marquee-item">KEVIN ROMAN ATELIER <span class="marquee-serial">· Serie 001–100</span></span>
+          <span class="marquee-item">PORCELANA FRÍA ARTESANAL <span class="marquee-serial">· Frasco 50 ml</span></span>
+          <span class="marquee-item">MÍSTICA XENEIZE DE COLECCIÓN <span class="marquee-serial">· Edición Boca Juniors</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Narrative & Concept Section -->
+    <section class="lore-section" id="historia">
+      <div class="container-shell">
+        <div class="section-header-center" data-reveal="up">
+          <span class="section-pill badge-micro" data-i18n="lore_badge">El ícono de la pasión xeneize</span>
+          <h2 class="section-title-xl font-display" data-i18n="lore_title">Historia del Personaje: La Leyenda Hecha Colección</h2>
+          <div class="gold-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="lore-grid">
+          <div class="lore-story-col" data-reveal="left">
+            <p class="lore-lead" data-i18n="lore_p1">
+              En los barrios donde el fútbol se vive como una religión, nació Kevin Roman, una figura que representa la pasión, la entrega y el sentimiento de millones de aficionados. Desde pequeño fue reconocido por su talento para conducir el balón y por su capacidad para inspirar a quienes lo rodeaban. Con el paso del tiempo se convirtió en un símbolo dentro del campo de juego y en una referencia para generaciones enteras de seguidores.
+            </p>
+            <p class="lore-paragraph" data-i18n="lore_p2">
+              Su nombre comenzó a escucharse en estadios, calles y conversaciones cotidianas. Cada jugada memorable, cada victoria y cada momento histórico ayudaron a construir una leyenda que trascendió lo deportivo para convertirse en parte de la cultura popular.
+            </p>
+
+            <div class="quote-card">
+              <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;" aria-hidden="true"><path d="M10 11H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5m12-7h-4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"/></svg>
+              <blockquote class="quote-text" data-i18n="lore_quote">
+                “Desarrollé esta propuesta combinando dos universos de fuerte carga emocional: el fútbol y los Art Toys. Reinterpreté a una leyenda deportiva argentina con un lenguaje caricaturesco y contemporáneo, logrando un objeto de colección y uso cotidiano que une memoria, identidad y pasión futbolera.”
+              </blockquote>
+              <div class="quote-footer">
+                <span class="quote-author">KEVIN ROMAN</span>
+                <span class="spec-micro text-subtext" data-i18n="lore_author_meta">Sobre el Diseñador &amp; Concepto · Buenos Aires</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lore-card-col" data-reveal="right" data-delay="120">
+            <article class="concept-card">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;">
+                <span class="badge-micro text-gold" data-i18n="concept_badge">Concepto &amp; Valor Editorial</span>
+                <span class="spec-micro text-subtext">Edición Boca 50 ml</span>
+              </div>
+
+              <div class="concept-media">
+                <img src="./assets/gallery/roman-02.jpg" alt="Frasco de vidrio KEVIN con cabezal escultórico desmontado y atomizador dorado">
+                <div class="concept-media-overlay">
+                  <span class="badge-micro text-gold" data-i18n="concept_img_tag">Figura Art Toy + Perfume</span>
+                  <span class="spec-micro text-archival" data-i18n="concept_img_mat">Porcelana Fría &amp; Vidrio</span>
+                </div>
+              </div>
+
+              <div class="concept-pillar">
+                <div class="concept-pillar-title">
+                  <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                  <span data-i18n="concept_1_title">Identidad Cultural</span>
+                </div>
+                <div class="concept-pillar-desc" data-i18n="concept_1_desc">Recupera elementos profundamente vinculados al fútbol argentino y la pasión xeneize.</div>
+              </div>
+
+              <div class="concept-pillar">
+                <div class="concept-pillar-title">
+                  <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  <span data-i18n="concept_2_title">Diseño Emocional</span>
+                </div>
+                <div class="concept-pillar-desc" data-i18n="concept_2_desc">Vínculo afectivo mediante recuerdos, admiración popular y sentido de pertenencia.</div>
+              </div>
+
+              <div class="concept-pillar">
+                <div class="concept-pillar-title">
+                  <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                  <span data-i18n="concept_3_title">Diseño Híbrido Coleccionable</span>
+                </div>
+                <div class="concept-pillar-desc" data-i18n="concept_3_desc">Inspirado en Art Toys contemporáneos con cabeza sobredimensionada, articulaciones visibles y frasco que conserva su valor tras el uso.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications Blueprint -->
+    <section class="container-shell specs-section" id="especificaciones">
+      <div class="specs-header" data-reveal="up">
+        <span class="badge-micro text-gold" data-i18n="specs_badge">Ficha técnica y especificaciones</span>
+        <h3 class="section-title-xl font-display" data-i18n="specs_title">Precisiones Escultóricas</h3>
+      </div>
+
+      <div class="specs-table-wrap" data-reveal="scale" data-delay="90">
+        <div class="specs-grid">
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_1_k">Tipo de Producto</span>
+            <span class="spec-val spec-micro" data-i18n="spec_1_v">Híbrido Art Toy &amp; Perfumería</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_5_k">Lenguaje Visual</span>
+            <span class="spec-val spec-micro is-gold" data-i18n="spec_5_v">Proporciones Cartoon &amp; Articulaciones</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_2_k">Material Principal</span>
+            <span class="spec-val spec-micro" data-i18n="spec_2_v">Porcelana Fría Artesanal</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_6_k">Packaging</span>
+            <span class="spec-val spec-micro" data-i18n="spec_6_v">Caja Temática de Exhibición &amp; Conservación</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_3_k">Envase Integrado</span>
+            <span class="spec-val spec-micro" data-i18n="spec_3_v">Frasco de Vidrio Incorporado</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_7_k">Identidad Gráfica</span>
+            <span class="spec-val spec-micro" data-i18n="spec_7_v">Paleta &amp; Códices Boca Juniors</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_4_k">Capacidad Fragancia</span>
+            <span class="spec-val spec-micro is-gold" data-i18n="spec_4_v">Perfume Masculino 50 ml</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key spec-micro" data-i18n="spec_8_k">Serie / Cupos</span>
+            <span class="spec-val spec-micro is-gold" data-i18n="spec_8_v">100 Piezas Numeradas a Mano</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Urgency Alert & Verified Collector Testimonials -->
+    <section class="community-section" id="testimonios">
+      <div class="container-shell">
+        <div class="urgency-banner" data-reveal="up">
+          <div class="urgency-left">
+            <div class="urgency-icon">
+              <svg class="ui-icon" style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/></svg>
+            </div>
+            <div>
+              <p class="urgency-title font-display" data-i18n="urgency_title">Alerta de Cupo: Solo 12 Ejemplares Restantes</p>
+              <p class="urgency-desc" data-i18n="urgency_desc">Una vez asignadas las 100 unidades, la edición de Art Toys de Kevin Roman quedará cerrada de forma definitiva.</p>
+            </div>
+          </div>
+          <button class="btn-urgency" id="urgency-scroll-btn" type="button" data-i18n="urgency_cta">Asegurar Reserva 047</button>
+        </div>
+
+        <div class="specs-header" data-reveal="up">
+          <span class="badge-micro text-gold" data-i18n="test_badge">Voces de la comunidad de arte</span>
+          <h3 class="section-title-xl font-display" data-i18n="test_title">Testimonios de Coleccionistas Verificados</h3>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card" data-reveal="up" data-delay="60">
+            <div>
+              <div class="stars-row" aria-label="5 de 5 estrellas">
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+              </div>
+              <p class="testimonial-quote">“Tener el Art Toy de Kevin Roman en mi estantería es tener la mística de Brandsen 805 en un objeto de diseño contemporáneo. El acabado en porcelana fría y la fragancia masculina de 50 ml superan cualquier expectativa.”</p>
+            </div>
+            <div class="testimonial-meta">
+              <div>
+                <p class="testimonial-name">Mariano V.</p>
+                <p class="testimonial-loc">Buenos Aires · Ejemplar #012</p>
+              </div>
+              <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-label="Comprador Verificado"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+          </article>
+
+          <article class="testimonial-card" data-reveal="up" data-delay="140">
+            <div>
+              <div class="stars-row" aria-label="5 de 5 estrellas">
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+              </div>
+              <p class="testimonial-quote">“La integración entre el frasco de vidrio de 50 ml y la escultura en porcelana fría está resuelta con nivel de galería. Incluso cuando termine el perfume, el packaging y la figura siguen siendo el centro de mi vitrina.”</p>
+            </div>
+            <div class="testimonial-meta">
+              <div>
+                <p class="testimonial-name">Valentina R.</p>
+                <p class="testimonial-loc">Córdoba, Argentina · Ejemplar #033</p>
+              </div>
+              <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-label="Comprador Verificado"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+          </article>
+
+          <article class="testimonial-card" data-reveal="up" data-delay="220">
+            <div>
+              <div class="stars-row" aria-label="5 de 5 estrellas">
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+              </div>
+              <p class="testimonial-quote">“A standout designer toy tribute to Boca Juniors culture. The hand-numbered authenticity certificate, oversized cartoon silhouette, and crisp blue-and-gold presentation arrived immaculate in New York.”</p>
+            </div>
+            <div class="testimonial-meta">
+              <div>
+                <p class="testimonial-name">Julian Mercer</p>
+                <p class="testimonial-loc">Nueva York · Ejemplar #021</p>
+              </div>
+              <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-label="Comprador Verificado"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="autenticidad">
+    <div class="container-shell">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="./assets/brand/logo-kevin-roman-blanco.png" alt="Kevin Roman Art Studio">
+          <p class="footer-copy" data-i18n="footer_desc">Estudio de diseño y Art Toys dedicado a la reinterpretación contemporánea de la pasión xeneize y la cultura futbolera. Piezas artesanales híbridas de colección numeradas a mano.</p>
+          <div class="footer-seal spec-micro">
+            <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span data-i18n="footer_seal">Sello Oficial de Autenticidad Registrada</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="badge-micro text-gold" data-i18n="footer_mid_title">Art Toy &amp; Perfumería</span>
+          <p class="footer-copy" style="margin-top:0.65rem;" data-i18n="footer_mid_desc">Una unión inédita entre el diseño de autor y la fragancia masculina. Inspirada en la iconografía de Boca Juniors, cada figura fusiona porcelana fría artesanal y un frasco de perfume de 50 ml integrado.</p>
+        </div>
+
+        <div>
+          <span class="badge-micro text-gold" data-i18n="footer_news_title">Acceso a Tiradas Privadas</span>
+          <p class="footer-copy" style="margin-top:0.65rem;" data-i18n="footer_news_desc">Reciba el certificado prioritario de reserva para las asignaciones de esculturas de la Serie Monumental.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input class="field-input" id="newsletter-email" type="email" placeholder="Tu correo de coleccionista" required>
+            <button class="btn-footer-submit" type="submit" data-i18n="footer_news_btn">UNIRSE</button>
+          </form>
+          <p class="newsletter-feedback spec-micro" id="newsletter-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom spec-micro">
+        <span>© 2026 Kevin Roman Art Studio. Todos los derechos reservados.</span>
+        <div class="footer-cities">
+          <span>Buenos Aires · Madrid · Tokio</span>
+          <span>Ediciones Limitadas de Colección</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Macro Modal -->
+  <div class="modal-overlay" id="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Visor macro de galería">
+    <div class="lightbox-card">
+      <div class="lightbox-stage">
+        <img class="lightbox-img" id="lightbox-img" src="./assets/gallery/roman-01.jpg" alt="Vista ampliada">
+        <button class="plinth-arrow plinth-arrow-prev" id="lightbox-prev" type="button" aria-label="Anterior">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="plinth-arrow plinth-arrow-next" id="lightbox-next" type="button" aria-label="Siguiente">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+      <div class="lightbox-bar">
+        <div>
+          <span class="badge-micro text-gold" id="lightbox-counter">1 / 20</span>
+          <p style="margin:0.15rem 0 0;font-weight:700;" id="lightbox-title">01. Art Toy Coleccionable &amp; Perfume 50ml</p>
+        </div>
+        <div style="display:flex;gap:0.5rem;">
+          <button class="toolbar-btn spec-micro" id="lightbox-zoom-btn" type="button">
+            <svg class="ui-icon text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+            <span>Zoom 1.75x</span>
+          </button>
+          <button class="toolbar-btn spec-micro" id="lightbox-close" type="button">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span>Cerrar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Curator Inquiry Modal -->
+  <div class="modal-overlay" id="curator-modal" aria-hidden="true" role="dialog" aria-label="Asesoría de Curador Privado">
+    <div class="modal-card">
+      <button class="modal-close" id="curator-close" type="button" aria-label="Cerrar modal">
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div style="display:flex;align-items:center;gap:0.85rem;margin-bottom:0.85rem;">
+        <svg class="ui-icon text-gold" style="width:30px;height:30px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        <div>
+          <h4 class="font-display" style="margin:0;font-size:1.45rem;">Asesoría de Curador Privado</h4>
+          <p class="spec-micro text-subtext" style="margin:0.1rem 0 0;">Kevin Roman Atelier · Servicio Concierge</p>
+        </div>
+      </div>
+      <p style="margin:0 0 1rem;font-size:0.85rem;color:var(--text-on-surface-variant);">
+        Un especialista del Atelier le responderá para coordinar elección de matrícula disponible, envío protegido o detalles de la fragancia 50 ml.
+      </p>
+      <form id="curator-form" style="display:flex;flex-direction:column;gap:0.75rem;">
+        <div>
+          <label class="spec-micro text-subtext" style="display:block;margin-bottom:0.3rem;">Nombre Completo</label>
+          <input class="field-input" type="text" placeholder="Ej. Santiago de la Colina" required>
+        </div>
+        <div>
+          <label class="spec-micro text-subtext" style="display:block;margin-bottom:0.3rem;">Correo Electrónico</label>
+          <input class="field-input" type="email" placeholder="coleccionista@dominio.com" required>
+        </div>
+        <div>
+          <label class="spec-micro text-subtext" style="display:block;margin-bottom:0.3rem;">Ciudad / País de Destino</label>
+          <input class="field-input" type="text" placeholder="Ej. Buenos Aires, Argentina" required>
+        </div>
+        <div>
+          <label class="spec-micro text-subtext" style="display:block;margin-bottom:0.3rem;">Solicitud de Matrícula o Consulta</label>
+          <textarea class="field-input" rows="3" placeholder="Indicar número deseado o consulta sobre envío..."></textarea>
+        </div>
+        <button class="btn-primary-gold" type="submit" style="font-size:1.1rem;padding:0.85rem;">
+          Enviar Petición a Curaduría
+        </button>
+        <p class="spec-micro text-gold" id="curator-feedback" style="margin:0;min-height:1rem;"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bag / Reservation Summary Modal -->
+  <div class="modal-overlay" id="bag-modal" aria-hidden="true" role="dialog" aria-label="Resumen de reserva">
+    <div class="modal-card">
+      <button class="modal-close" id="bag-close" type="button" aria-label="Cerrar resumen">
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;padding-right:2.5rem;">
+        <h4 class="font-display" style="margin:0;font-size:1.45rem;">Bolsa de Colección</h4>
+        <span class="badge-micro text-gold" id="bag-status-badge">Disponible para reserva</span>
+      </div>
+      <div class="plinth-box" style="display:flex;gap:1rem;align-items:center;margin-bottom:1.1rem;">
+        <img src="./assets/gallery/roman-01.jpg" alt="Kevin Roman Art Toy" style="width:76px;height:76px;object-fit:cover;border-radius:var(--radius-default);border:1px solid var(--border-metallic);">
+        <div style="flex:1;">
+          <p style="margin:0;font-weight:700;">KEVIN ROMAN — Art Toy &amp; Perfume 50 ml</p>
+          <p class="spec-micro text-subtext" style="margin:0.2rem 0;">Matrícula Asignada: Nº 047 / 100</p>
+          <p class="font-display text-gold" id="bag-summary-price" style="margin:0.25rem 0 0;font-size:1.35rem;">$180 USD</p>
+        </div>
+      </div>
+      <p style="margin:0 0 1.1rem;font-size:0.82rem;color:var(--text-subtext);">
+        Mockup interactivo de presentación. Incluye Art Toy en porcelana fría artesanal, fragancia masculina 50 ml, caja de exhibición y certificado numerado.
+      </p>
+      <button class="btn-primary-gold" id="bag-confirm-btn" type="button" style="font-size:1.1rem;padding:0.85rem;">
+        Confirmar Reserva Demo (047/100)
+      </button>
+    </div>
+  </div>
+
+  <!-- Quick Search Modal -->
+  <div class="modal-overlay" id="search-modal" aria-hidden="true" role="dialog" aria-label="Buscador del archivo">
+    <div class="modal-card">
+      <button class="modal-close" id="search-close" type="button" aria-label="Cerrar buscador">
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <h4 class="font-display" style="margin:0 0 0.85rem;font-size:1.35rem;">Explorar Archivo Kevin Roman</h4>
+      <input class="field-input" id="search-input" type="search" placeholder="Buscar: porcelana, perfume 50 ml, historia, precio...">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-banner" id="toast-notify" role="status" aria-live="polite">
+    <div class="toast-icon">
+      <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    </div>
+    <div>
+      <p id="toast-title" style="margin:0;font-weight:700;color:var(--text-archival);">Reserva en Proceso (047/100)</p>
+      <p class="spec-micro text-subtext" id="toast-subtitle" style="margin:0.15rem 0 0;">Pieza separada por 15 minutos en el Atelier.</p>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
