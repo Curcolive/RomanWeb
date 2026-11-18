@@ -108,11 +108,15 @@ function updateGallery(index, animate = true) {
   if (lightboxTitle) lightboxTitle.textContent = labelTitle;
   if (lightboxCounter) lightboxCounter.textContent = formattedCounter;
 
+  const rail = document.getElementById('gallery-thumbs');
   document.querySelectorAll('.thumb-card').forEach((card, idx) => {
     const active = idx === safeIndex;
     card.classList.toggle('is-active', active);
-    if (active && animate) {
-      card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    if (active && animate && rail) {
+      const railRect = rail.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const targetLeft = rail.scrollLeft + (cardRect.left - railRect.left) - (railRect.width - cardRect.width) / 2;
+      rail.scrollTo({ left: Math.max(0, targetLeft), behavior: 'smooth' });
     }
     const labelEl = card.querySelector('.thumb-label');
     if (labelEl && GALLERY_ITEMS[idx]) {

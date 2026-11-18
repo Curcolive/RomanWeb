@@ -926,6 +926,7 @@ a {
   .gallery-caption-strip {
     flex-direction: row;
     align-items: center;
+    min-height: 4.75rem;
   }
 }
 
@@ -958,6 +959,7 @@ a {
 
 /* Thumbnail Rail (Horizontal Archival Filmstrip for 20+ photos) */
 .thumbs-grid {
+  position: relative;
   display: flex;
   gap: 0.65rem;
   overflow-x: auto;
